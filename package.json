@@ -24,5 +24,25 @@
     "parcel-plugin-nuke-dist": "^1.0.1",
     "posthtml-include": "^1.6.2",
     "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "parcel-plugin-custom-dist-structure": "^1.1.18"
+  },
+  "customDistStructure": {
+  "config": {
+    ".js": "js",
+    
+    "images": [
+      ".jpg",
+      ".png"
+    ],
+    ".fileExtension": "folder/in/dist",
+    "folder/in/dist": [ ".file", ".extensions" ]
+  },
+  "options": {
+    "development": true
   }
 }
+}
+
+
